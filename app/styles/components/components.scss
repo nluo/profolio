@@ -31,6 +31,16 @@
 @import '_modules/_toc';
 @import '_modules/_next-lessons';
 
+// materialze
+
+// Mixins
+@import "_components/prefixer";
+@import "_components/mixins";
+@import "_components/color";
+
+// Variables;
+@import "_components/variables";
+
 // Components
 @import '_components/_grid';
 @import '_components/_typography';
@@ -44,6 +54,7 @@
 @import '_components/_articles-list';
 @import '_components/_guides-list';
 @import '_components/_icon-circle';
+@import '_components/cards';
 
 // Themed styles
 @import '_themed';
@@ -54,3 +65,8 @@
 
 // Make sure this is last to override anything else :)
 @import '_helper';
+
+
+
+
+

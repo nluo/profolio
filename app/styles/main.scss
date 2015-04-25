@@ -34,37 +34,6 @@ body.open {
   overflow: hidden;
 }
 
-@function dropShadow(distance = 4px, color = blackTransparent, important = null){
-    box-shadow: 
-        0 0 1px rgba(color, 0.2),
-        0 (distance) (distance*3) -(distance) rgba(color,distance / 500 + 0.15),
-        0 distance distance * 3 (distance / 1.5) rgba(color,distance / 100 + 0.05) important;
-}
-
-@mixin vendor($prop, $args){
-    -webkit-#{$prop}: $args;
-    -moz-#{$prop}: $args;
-    -ms-#{$prop}: $args;
-    -o-#{$prop}: $args;
-    #{$prop}: $args;
-}
-
-box(){
-    padding:10px;
-    background: white;
-    border: solid 1px lightGray;
-}
-
-card(){
-    color: darkStroke;
-    box();
-    background-color:white;
-    margin:10px 0;
-    border-radius:2px;
-    border:none;
-    dropShadow(2px);
-}
-
 .app-bar {
   display: block;
   width: 100%;
