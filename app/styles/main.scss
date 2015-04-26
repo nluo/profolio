@@ -52,8 +52,6 @@ body.open {
   width: 100%;
   height: 60px;
   position: relative;
-
-  @include vendor(flex-direction, row);
   margin: 0 auto;
 }
 
@@ -228,6 +226,45 @@ main {
   padding: 60px 16px 16px 16px;
   min-height: 100%;
 }
+
+.projects {
+  margin-top: 2%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: space-around;
+}
+.projects > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+// .row {
+//   @include medium {
+//     flex: 1 auto;
+//   }
+// }
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  .row { flex: 1 auto; }
+}
+
+
+.col-1 {
+  order: 1; 
+}
+
+.col-2 {
+  order: 2;
+}
+.col-3 {
+  order: 3;
+}
+
 
 /** Larger Screens - desktops and tablets **/
 @media all and (min-width: 990px) {
