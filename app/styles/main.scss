@@ -227,7 +227,7 @@ main {
   min-height: 100%;
 }
 
-.projects {
+.projects-list {
   margin-top: 2%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -236,7 +236,7 @@ main {
 
   justify-content: space-around;
 }
-.projects > * {
+.projects-list > * {
   padding: 10px;
   flex: 1 100%;
 }
@@ -248,22 +248,11 @@ main {
 // }
 
 /* Medium screens */
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
   /* We tell both sidebars to share a row */
-  .row { flex: 1 auto; }
+  .project { flex: 1 33.333333%; }
 }
 
-
-.col-1 {
-  order: 1; 
-}
-
-.col-2 {
-  order: 2;
-}
-.col-3 {
-  order: 3;
-}
 
 
 /** Larger Screens - desktops and tablets **/
